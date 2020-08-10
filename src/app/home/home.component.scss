@@ -1,0 +1,58 @@
+.body{
+    width: 1930;
+    height: 89.25vh;
+    top: 0;
+    left: 0;
+    margin-left: -0.5%;
+    font-family: 'Poppins', sans-serif;
+    // background-color: #49C0E0;
+    background-image: url('../../assets/Community.jpg');
+    opacity: 100%;
+}
+
+.h2{
+   opacity: 100%;
+   font-size: 24px;
+   color: black;
+   margin-left: 40px;
+   padding-top: 35px;
+   font-weight: bold;
+}
+
+.shot{
+    opacity: 100%;
+    font-size: 40px;
+    color: black;
+    margin-left: 40px;
+    padding-top: 35px;
+    font-weight: bold; 
+    margin-top: -35%;
+    margin-left: 70%;
+}
+
+.shotbox{
+    width: 300px;
+    height: 400px;
+    background-color: #5EC8E7;
+    margin-left: 68%;
+    margin-top: -16%;
+}
+
+.chatbutton{
+    padding: 20px;
+    background-color: #c9f0fc;
+    margin-left:3%;
+    margin-top: 1%;
+    border-radius: 10%;
+    border: none;
+}
+
+.chatbutton:hover{
+    padding: 20px;
+    background-color: #fcc9c9;
+    margin-left:3%;
+    margin-top: 1%;
+    border-radius: 10%;
+    border: none;
+    transition: ease-in-out 0.4s;
+}

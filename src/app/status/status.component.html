@@ -1,0 +1,52 @@
+<div class="body">
+    <app-sidenav></app-sidenav>
+        <div class="statusbox">
+
+            <div class="topbox">
+                <h4 class="recent">Status Section</h4>
+                <img src="../../assets/search.svg" class="searchicon" alt="">
+                <input type="text" placeholder="Search" class="search">
+                <div class="results">no results</div>
+            </div>
+            <div class="mystatus">
+                <div *ngIf="status">
+                    <h4 class="post">Your Status</h4>
+                    <img src="../../assets/Doggie.gif" class="statusgif" alt="">
+                </div>
+                <div *ngIf="!status">
+                    <h4 class="post">Add Status</h4>
+                    <img src="../../assets/add.svg" class="addstatus" alt="">
+                </div>
+            </div>
+
+            <div class="yourfrends">Your Friends</div>
+
+            <div class="friendsstatus">
+                <div *ngIf="status">
+                    <h4 class="post">Your Status</h4>
+                    <img src="../../assets/Doggie.gif" class="statusgif" alt="">
+                </div>
+                <div *ngIf="!status">
+                    <h4 class="post">No Status Buy your friends</h4>
+                </div>
+            </div>
+
+        
+
+        </div>
+
+
+        <div class="commonview">
+            <video autoplay muted loop class="statusvideo">
+                <source src="../../assets/Check.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+
+
+              <div style="margin-left: 20px;">Status By Joey Tribioni</div>
+
+              <div style="float: right;margin-right: 20px;margin-top: -22px;">2:45 PM</div>
+             
+        </div>
+
+</div>

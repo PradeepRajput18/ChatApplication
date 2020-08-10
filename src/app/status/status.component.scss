@@ -1,0 +1,131 @@
+.body{
+    width: 2000;
+    height: 110vh;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: ease-in-out 0.4s;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.statusbox{
+    width: 400px;
+    height: auto;
+    background-color: #D2E9EF;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: -0.5%;
+    margin-left: -2px;
+    .topbox{
+        width: 400px;
+    border-radius: 6px;
+    height: 150px;
+      background-color:#67c2ff;
+      margin-top: -1%;
+    }
+    .recent{
+        margin-top: 5px;
+        padding: 5%;
+    }
+    .searchicon{
+        width: 24px;
+        margin-left: 20px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .search{
+        all: unset;
+        padding: 5px;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        margin-left: 12px;
+    }
+    .results{
+        margin-left: 280px;
+        margin-top: -30px;
+        cursor: none;
+    }
+}
+
+
+.mystatus{
+    width: 400px;
+    border-radius: 6px;
+    height: auto;
+      background-color: #6bd9dd;
+      display: flex;
+      flex-direction: row;
+      margin-top: -1.5%;
+      .post{
+          padding: 5px;
+          margin-left: 10px;
+          align-items: center;
+          font-weight: 500;
+          font-size: 12px;
+      }
+
+      .statusgif{
+          max-width: 100px;
+          border-radius: 50%;
+          margin-top:0px ;
+          padding: 10px;
+      }
+      .addstatus{
+        width: 40px;
+        border-radius: 50%;
+        padding: 10px;
+        margin-left: 180px;
+      }
+}
+
+.friendsstatus{
+    width: 400px;
+    border-radius: 6px;
+    height: auto;
+      background-color: #dd786b;
+      display: flex;
+      flex-direction: row;
+      margin-top: -1.5%;
+      .post{
+          padding: 5px;
+          margin-left: 10px;
+          align-items: center;
+          font-weight: 500;
+          font-size: 12px;
+      }
+
+      .statusgif{
+          max-width: 100px;
+          border-radius: 50%;
+          margin-top:0px ;
+          padding: 10px;
+      }
+}
+
+.yourfrends{
+    font-size: 14px;
+    padding: 20px;
+    margin-left: 5px;
+    font-weight: 600px;
+}
+
+.commonview{
+    width: 820px;
+    height: 700px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #71a3d1;
+    position: sticky;
+   .statusvideo{
+        padding: 10px;
+        width: 790px;
+        border-radius:2.5%;
+        height: auto;
+    }
+}

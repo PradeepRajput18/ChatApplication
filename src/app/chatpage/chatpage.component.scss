@@ -1,0 +1,226 @@
+.body{
+    width: 2000;
+    height: 110vh;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: ease-in-out 0.4s;
+    display: flex;
+    flex-direction: row;
+}
+
+.inbox{
+    width: 400px;
+    height: auto;
+    background-color: #D2E9EF;
+    border-radius: 6px;
+    margin-top: -0.5%;
+    margin-left: -2px;
+    .topbox{
+        width: 400px;
+    border-radius: 6px;
+    height: 150px;
+      background-color: #F2825B;
+      margin-top: -1%;
+    }
+    .recent{
+        margin-top: 5px;
+        padding: 5%;
+    }
+    .searchicon{
+        width: 24px;
+        margin-left: 20px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    .search{
+        all: unset;
+        padding: 5px;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        margin-left: 12px;
+    }
+    .results{
+        margin-left: 280px;
+        margin-top: -30px;
+        cursor: none;
+    }
+
+    .messages{
+        width: 400px;
+        border-radius: 6px;
+        height: 145px;
+          background-color: #82B0D2;
+          overflow: hidden;
+          margin-top: 10px;
+          cursor: pointer;
+        //   margin-top: -1%;
+
+        .name{
+          margin-left: 60px;
+          margin-top: -30px;
+          font-weight: 500;
+        }
+        .profile{
+        width: 40px;
+        border-radius: 30%;
+        padding: 10px;
+
+        }
+        .time{
+           margin-left: 330px;
+           font-weight: bold;
+           color: #ffffff;
+           margin-top: -42px;
+        }
+        .message{
+           margin-top: 30px;
+           margin-left: 40px;
+           width: 355px;
+           padding-bottom: 10px;
+        }
+
+       
+    }
+
+}
+
+
+// for alternative
+
+.inboximg{
+    width: 400px;
+    height: auto;
+}
+
+
+.common{
+    width: 820px;
+    height: 700px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #5A8AB8;
+    position: sticky;
+
+    .chatboxtop{
+
+          width: 820px;
+          height: 80px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background-color: #F2825B;
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+
+
+          .sendasserts{
+            // margin-top: 10px;
+            margin-left: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: #060608;
+            cursor: pointer;
+          }
+          .addhim{
+               @extend .sendasserts
+          }
+          .stared{
+              @extend .sendasserts
+          }
+
+    }
+
+    .messages{
+        width: auto;
+        height: 519px;
+        background-color: #82B0D2;
+        overflow: auto;
+
+        .timeindicator{
+            padding: 5px;
+            background-color: #d0d2d3;
+            font-size: 16px;
+            width: fit-content;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 390px;
+            border-radius: 4px;
+        }
+        .friend{
+            padding: 10px;
+            background-color: #dbebfa;
+            font-size: 14px;
+            max-width: 400px;
+            min-height: 10px;
+            margin-top: 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            border-bottom-left-radius: 3px;
+            word-spacing: 5px;
+        }
+        .me{
+            padding: 10px;
+            background-color: #feba02;
+            font-size: 14px;
+            max-width: 400px;
+            min-height: 10px;
+            margin-top: 20px;
+            margin-right: 10px;
+            border-radius: 20px;
+            border-bottom-right-radius: 3px;
+            float: right;
+            word-spacing: 5px;
+
+        }
+    }
+
+    .chatboxbottom{
+        width: auto;
+        height: 100px;
+        margin-top: 10px;
+        background-color: #CFD8DC;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        .emoji{
+            margin-left: 20px;
+            width: 24px;
+            cursor: pointer;
+        }
+
+        .chatbox{
+            margin-left: 20px;
+            width: 400px;
+            height:40px;
+            border-radius: 10px;
+            font-size:12px;
+            font-weight: bold;
+            color: rgb(44, 42, 42);
+            border: none;
+            overflow: auto;
+            word-spacing: 3px;
+        }
+
+        .send{
+            margin-left: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+            cursor: pointer;
+        }
+    }
+}

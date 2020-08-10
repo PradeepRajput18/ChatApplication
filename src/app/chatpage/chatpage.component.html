@@ -1,0 +1,63 @@
+
+<div class="body">
+     <app-sidenav></app-sidenav>
+
+     <div class="inbox">
+         <div class="topbox">
+             <h4 class="recent">Recent Chats</h4>
+             <img src="../../assets/search.svg" class="searchicon" alt="">
+             <input type="text" placeholder="Search" class="search">
+             <div class="results">no results</div>
+         </div>
+        
+         <div *ngIf="!show">
+                <div class="messages" *ngFor="let chats of chatters;index as i">
+                    <img src={{chats.image}} class="profile" alt="" srcset="">
+                    <div class="time">{{chats.time}}</div>
+                    <div class="name">{{chats.name}}</div>
+                    <div class="message">{{chats.chat.toString(10)}}</div>
+                    <hr *ngIf="i>0" class="divider">
+                </div>
+         </div>
+
+         <div *ngIf="show">
+             <img src="../../assets/inboxchat.webp" class="inboximg" alt="">
+             <h3 style="text-align: center;font-weight: bold;">Inbox is empty!</h3>
+             <h4 style="text-align: center;">Lets Start Converstion with friends <br> or Anoymoluss!</h4>
+         </div>
+     </div>
+
+     <div class="common">
+         <div class="chatboxtop">
+             <button class="sendasserts">Priority</button>
+             <button class="addhim">Add Him to</button>
+             <button class="stared">stared Messages</button>
+             <h5 style="margin-left: 340px;font-weight: bold;cursor: pointer;">Status</h5>
+             <h5 style="margin-left: 20px;font-weight: bold;cursor: pointer;">Delete chat</h5>
+         </div>
+
+         <div class="messages">
+             <div class="timeindicator">Today</div>
+              <div class="friend">yes it is sent by your friend chandler and ross monica and rachel green yes it is sent by your friend chandler and ross monica and rachel green yes it is sent by your friend chandler and ross monica and rachel green yes it is sent by your friend chandler and ross monica and rachel green yes it is sent by your friend chandler and ross monica and rachel green yes it is sent by your friend chandler and ross monica and rachel green yes it is sent by your friend chandler and ross monica and rachel green yes it is sent by your friend chandler and ross monica and rachel green</div>
+              <div class="me">yes it is sent by me and my name is joey tribioni</div>
+
+         </div>
+
+         <div class="chatboxbottom">
+             <div class="emoji">😀</div>
+             <input class="chatbox" placeholder="Start Chatiing....">
+             <button class="send">Send</button>
+             <img src="../../assets/add.svg" style="width: 33px;margin-left: 30px;" alt="" srcset="">
+         </div>
+     </div>
+
+
+</div>
+
+
+
+
+<!-- <img src="../../assets/Google.jpg" class="profile" alt="" srcset="">
+<div class="time">2:45pm</div>
+<div class="name">Pradeep Tiwari</div>
+<div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium culpa iste ipsum quae officia, dolorum porro.</div> -->
